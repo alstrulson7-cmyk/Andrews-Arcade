@@ -1,0 +1,98 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "category": "Puzzle",
+    "description": "Slide tiles and combine them to reach 2048.",
+    "thumbnail": "🔢",
+    "url": "https://play2048.co/"
+  },
+  {
+    "id": "pacman",
+    "title": "Pac-Man",
+    "category": "Arcade",
+    "description": "Classic maze chase — eat dots, dodge ghosts.",
+    "thumbnail": "👾",
+    "url": "https://freepacman.org/"
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "category": "Puzzle",
+    "description": "Stack falling blocks and clear lines.",
+    "thumbnail": "🟦",
+    "url": "https://tetris.com/play-tetris"
+  },
+  {
+    "id": "snake",
+    "title": "Snake",
+    "category": "Arcade",
+    "description": "Grow your snake without hitting walls or yourself.",
+    "thumbnail": "🐍",
+    "url": "https://www.google.com/fbx?fbx=snake_arcade"
+  },
+  {
+    "id": "chess",
+    "title": "Chess",
+    "category": "Strategy",
+    "description": "Play chess against the computer or a friend.",
+    "thumbnail": "♟️",
+    "url": "https://www.chess.com/play/computer"
+  },
+  {
+    "id": "sudoku",
+    "title": "Sudoku",
+    "category": "Puzzle",
+    "description": "Fill the 9×9 grid with numbers 1–9.",
+    "thumbnail": "🔣",
+    "url": "https://sudoku.com/"
+  },
+  {
+    "id": "flappybird",
+    "title": "Flappy Bird",
+    "category": "Arcade",
+    "description": "Tap to fly through the pipes without crashing.",
+    "thumbnail": "🐦",
+    "url": "https://flappybird.io/"
+  },
+  {
+    "id": "wordle",
+    "title": "Wordle",
+    "category": "Word",
+    "description": "Guess the 5-letter word in 6 tries.",
+    "thumbnail": "🔤",
+    "url": "https://wordplay.com/"
+  },
+  {
+    "id": "minesweeper",
+    "title": "Minesweeper",
+    "category": "Puzzle",
+    "description": "Clear the minefield without triggering a bomb.",
+    "thumbnail": "💣",
+    "url": "https://minesweeper.online/"
+  },
+  {
+    "id": "solitaire",
+    "title": "Solitaire",
+    "category": "Card",
+    "description": "Classic Klondike solitaire in your browser.",
+    "thumbnail": "🃏",
+    "url": "https://www.solitaire.org/"
+  },
+  {
+    "id": "typeracer",
+    "title": "TypeRacer",
+    "category": "Word",
+    "description": "Race others by typing quotes as fast as you can.",
+    "thumbnail": "⌨️",
+    "url": "https://play.typeracer.com/"
+  },
+  {
+    "id": "geometrydash",
+    "title": "Geometry Dash",
+    "category": "Arcade",
+    "description": "Jump and fly through a rhythm-based obstacle course.",
+    "thumbnail": "🔶",
+    "url": "https://geometrydashgame.org/"
+  }
+]

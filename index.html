@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcadeVault — Unblocked Games</title>
+  <meta name="description" content="Play free unblocked games in your browser. No downloads, no logins." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <a class="nav-logo" id="logo-btn" href="#" aria-label="ArcadeVault home">
+      <div class="nav-logo-icon">🎮</div>
+      ARCADE<span class="vault">VAULT</span>
+    </a>
+
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search games…"
+        aria-label="Search games"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+
+    <span class="nav-badge">🔓 All Free</span>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        Unblocked &amp; Free Forever
+      </div>
+
+      <h1>
+        Your Browser.<br>
+        <span class="line2">Infinite Games.</span>
+      </h1>
+
+      <p class="hero-sub">No downloads. No logins. No restrictions. Just pick a game and play.</p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" id="stat-games">12</span>
+          <div class="stat-label">Games</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" id="stat-cats">5</span>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <div class="stat-label">Free</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ FEATURED ══ -->
+  <div class="featured-wrap">
+    <div class="featured-label">Featured Game</div>
+    <div class="featured-banner" id="featured-banner" role="button" tabindex="0" aria-label="Play featured game">
+      <div class="featured-deco" id="featured-deco">🔢</div>
+      <div class="featured-left">
+        <div class="featured-tag" id="featured-tag">Puzzle</div>
+        <div class="featured-title" id="featured-title">2048</div>
+        <div class="featured-desc" id="featured-desc">Slide tiles and combine them to reach the elusive 2048 tile. Simple to learn, hard to master.</div>
+      </div>
+      <button class="featured-play" id="featured-play">▶ PLAY NOW</button>
+    </div>
+  </div>
+
+  <!-- ══ FILTERS ══ -->
+  <div class="filters-wrap">
+    <span class="filters-wrap-label">Category:</span>
+    <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+  </div>
+
+  <!-- ══ SECTION HEADER ══ -->
+  <div class="section-header">
+    <div class="section-title">All Games</div>
+    <span id="game-count"></span>
+  </div>
+
+  <!-- ══ GRID ══ -->
+  <main class="grid" id="grid" aria-live="polite" aria-label="Games list"></main>
+
+  <!-- ══ EMPTY ══ -->
+  <div id="empty" aria-live="polite">
+    <span class="empty-icon">🕹️</span>
+    <h3>NO GAMES FOUND</h3>
+    <p>Try a different search or select another category.</p>
+  </div>
+
+  <!-- ══ MODAL ══ -->
+  <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <div class="modal-left">
+        <span class="modal-icon" id="modal-icon">🎮</span>
+        <span class="modal-title" id="modal-title"></span>
+      </div>
+      <div class="modal-actions">
+        <a class="btn-icon" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">
+          ↗ New Tab
+        </a>
+        <button class="btn-close" id="btn-close" aria-label="Close game">✕</button>
+      </div>
+    </div>
+    <iframe
+      id="game-frame"
+      src="about:blank"
+      title="Game"
+      allowfullscreen
+      allow="autoplay; fullscreen"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-pointer-lock"
+    ></iframe>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-logo">ARCADEVAULT</div>
+    <p>Free unblocked games for everyone. Add more by editing <code>games.json</code>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
